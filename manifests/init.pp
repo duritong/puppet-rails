@@ -14,8 +14,8 @@
 #
 
 class rails {
-    case $operatingsystem {
-        debian: { include rails::debian }
-        default: { include rails::gem }
-    }
+  case $::operatingsystem {
+    debian: { include rails::debian }
+    default: { include rails::gem }
+  }
 }
